@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Emergency BLE</string>
+
+    <string name="main_connect_btn">연결하기</string>
+    <string name="service_running">서비스가 실행중입니다.</string>
+
+    <string name="main_text1">BLE Device가 등록되지 않았습니다.\nBLE Device를 등록해주세요.</string>
+    <string name="main_text2">설정에서 위급상황시 연락받을 연락처 등록 및\nDevice 설정 기능을 이용할 수 있습니다.</string>
+    <string name="connect0">등록되지 않음</string>
+    <string name="connect1">연결되지 않음</string>
+    <string name="connect2">연결됨</string>
+    <string name="title_activity_sos_friend_registration">SOS_Friend_Registration</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+            <size
+                android:height="5dp"
+                android:width="5dp" />
+
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/button"/>
+
+</layer-list>
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<item
+    android:state_pressed="true"
+    android:drawable="@drawable/icon_5_p"
+    android:width="60dp"
+    android:height="60dp"/>
+
+    <item
+        android:state_pressed="false"
+        android:drawable="@drawable/icon_5_n"
+        android:width="60dp"
+        android:height="60dp"/>
+
+    <!--
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#FF000000"/>
+    <padding android:left="7dp"
+        android:top="7dp"
+        android:right="7dp"
+        android:bottom="7dp" />
+    <corners android:radius="4dp" />
+    <gradient android:startColor="#FFFFFFFF"
+        android:endColor="#80FF00FF"
+        android:angle="270"/>
+    <size android:width="40dp"
+        android:height="40dp"/>
+</shape>
+-->
+
+</layer-list>

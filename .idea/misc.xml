@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.4088541666666667" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/drawable/black_border_btn.xml" value="0.4088541666666667" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/drawable/black_border_btn_normal.xml" value="0.4088541666666667" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/drawable/black_border_btn_press.xml" value="0.4088541666666667" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/drawable/black_border_btn_text.xml" value="0.4088541666666667" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/drawable/edittext_x_btn.xml" value="0.2735" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/drawable/ic_launcher_background.xml" value="0.4088541666666667" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/drawable/popup_confirm.xml" value="0.2735" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/drawable/seekbar.xml" value="0.3463541666666667" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/drawable/seekbar_thumb.xml" value="0.3463541666666667" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/drawable/setting_switch_track_selector.xml" value="0.2735" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/layout/activity_contact.xml" value="0.1875" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/layout/activity_popup_onebtn.xml" value="0.2828125" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/layout/activity_registration.xml" value="0.27239583333333334" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/layout/activity_registration_connect.xml" value="0.17291666666666666" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/layout/activity_registration_fail.xml" value="0.1765625" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/layout/activity_registration_success.xml" value="0.1765625" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/layout/activity_sos_friend.xml" value="0.2869791666666667" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/layout/activity_sos_friend_registration.xml" value="0.2859375" />
+        <entry key="..\:/project/KJH_BLE/app/src/main/res/layout/activity_sos_friend_sms.xml" value="0.2713541666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

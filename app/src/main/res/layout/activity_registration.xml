@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/registration_scan_back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12.5dp">
+            <ImageView
+                android:layout_width="8.5dp"
+                android:layout_height="15.5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/arrow_left"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/registration_scan_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="3.3dp"
+            android:text="BLE Device Scan"
+            android:textColor="#333333"
+            android:textSize="16.8dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginLeft="22.5dp"
+            android:layout_marginRight="22.5dp"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/registration_scan_ani_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ble_scan"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/registration_scan_text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="22.5dp"
+                        android:layout_marginRight="22.5dp"
+                        android:textSize="13dp"
+                        android:textColor="#333333" />
+
+                    <TextView
+                        android:id="@+id/registration_scan_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16.5dp"
+                        android:layout_marginLeft="22.5dp"
+                        android:layout_marginRight="22.5dp"
+                        android:textSize="12dp"
+                        android:textColor="#666666"
+                        android:gravity="center"
+                        android:text="BLE Device의 전원을 켠 후 Scan 버튼을 눌러주세요.\n
+스마트폰에서 가장 가까운 BLE Device를 확인하여\n
+연결 및 등록을 시도합니다."/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+        <!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="19.5dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/registration_scan_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="22.5dp"
+                android:layout_marginRight="22.5dp"
+                android:textSize="13dp"
+                android:textColor="#333333"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/registration_scan_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="22.5dp"
+                android:layout_marginRight="22.5dp"
+                android:textSize="12dp"
+                android:textColor="#666666"/>
+        </LinearLayout>
+        -->
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="37dp"
+            >
+            <ImageView
+                android:id="@+id/scan_dot1"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/scan_dot_off"/>
+            <ImageView
+                android:id="@+id/scan_dot2"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/scan_dot_off"/>
+            <ImageView
+                android:id="@+id/scan_dot3"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/scan_dot_off"/>
+            <ImageView
+                android:id="@+id/scan_dot4"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/scan_dot_off"/>
+            <ImageView
+                android:id="@+id/scan_dot5"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/scan_dot_off"/>
+            <ImageView
+                android:id="@+id/scan_dot6"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/scan_dot_off"/>
+            <ImageView
+                android:id="@+id/scan_dot7"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/scan_dot_off"/>
+            <ImageView
+                android:id="@+id/scan_dot8"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/scan_dot_off"/>
+            <ImageView
+                android:id="@+id/scan_dot9"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/scan_dot_off"/>
+            <ImageView
+                android:id="@+id/scan_dot10"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/scan_dot_off"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/registration_scan_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="BLE Device Scan"
+            android:layout_marginLeft="22.5dp"
+            android:layout_marginRight="22.5dp"
+            android:layout_marginBottom="30dp"
+            android:background="#2f6fd1"
+            android:textSize="17dp"
+            android:textColor="#fefefe"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="4dp"
+            android:textAllCaps="false"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+</LinearLayout>

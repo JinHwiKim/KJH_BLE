@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:id="@+id/devicepager1_layout"
+    android:weightSum="1">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="343dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#fcfcfc">
+
+
+        <RelativeLayout
+            android:id="@+id/devicepager1_main_img"
+            android:layout_width="205dp"
+            android:layout_height="205dp"
+            android:layout_alignTop="@+id/linearLayout"
+            android:orientation="vertical"
+            android:background="@drawable/main_circle_blue">
+
+            <TextView
+                android:id="@+id/status_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="47.5dp"
+                android:text="연결 상태"
+                android:textColor="#999999"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_width="125dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="69dp"
+                android:gravity="center_horizontal"
+                android:letterSpacing="-0.04"
+                android:lineSpacingExtra="-4dp"
+                android:text="@string/connect0"
+                android:textColor="#8bba29"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="109dp"
+                android:src="@drawable/main_circle_line" />
+
+            <Button
+                android:id="@+id/find_btn"
+                android:layout_width="100dp"
+                android:layout_height="33dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="127.5dp"
+                android:layout_marginBottom="1.5dp"
+                android:background="@drawable/main_button_find"
+                android:text="연결 확인"
+                android:textAllCaps="false"
+                android:textColor="#333333"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="95.5dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/devicepager1_main_img"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/device_pager_devicename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical|end"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                android:text="BLE Device"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="36.5dp"
+            android:layout_height="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="20dp"
+            android:background="#999999" />
+
+
+        <TextView
+            android:id="@+id/devicepager1_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/devicepager1_main_img"
+            android:gravity="right"
+            android:text="위급상황 발생시 BLE Device의 동작으로 등록된 연락처에게 위급상황 알림 SMS 메시지를 전송할 수 있습니다."
+            android:textColor="#cc333333"
+            android:textSize="12dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/devicepager1_text1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/devicepager1_main_img"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
+                android:orientation="vertical">
+
+
+            </RelativeLayout>
+
+
+            <!--
+            <Button
+                android:id="@+id/location_map_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/main_loca_p"
+                />
+
+            <TextView
+                android:id="@+id/devicepager1_location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#333333"
+                android:text="@string/viewpager_sos1_btn1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="19.5dp"
+                android:gravity="end|center_vertical"
+                />
+                -->
+        </LinearLayout>
+
+        <!--
+        <Button
+            android:id="@+id/location_map_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="216dp"
+            android:layout_marginRight="119.5dp"
+            android:background="@drawable/main_loca_p"
+            />
+
+        <TextView
+            android:id="@+id/devicepager1_location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#333333"
+            android:text="@string/viewpager_sos1_btn1"
+            android:layout_marginTop="232dp"
+            android:layout_marginRight="19.5dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            />
+            -->
+
+        <!--
+        <Button
+            android:id="@+id/location_map_btn_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="216dp"
+            android:layout_marginRight="108dp"
+            android:background="@drawable/main_loca_p"
+            />
+            -->
+
+        <!--
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="26dp"
+            android:background="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="177.5dp"
+            android:layout_marginRight="88dp"/>
+            -->
+
+        <!--
+        <Button
+            android:id="@+id/camera_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="216dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/main_photo_btn"/>
+
+        <Button
+            android:id="@+id/camera_btn_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="216dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/main_photo_p"/>
+        -->
+
+
+        <!--
+        <TextView
+            android:id="@+id/devicepager1_camera_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#333333"
+            android:text="@string/viewpager_sos1_btn2"
+            android:layout_marginTop="277.5dp"
+            android:layout_marginRight="19.5dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            />
+            -->
+
+        <!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="296dp"
+            android:layout_marginRight="19.5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/device_pager_next_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:text="@string/viewpager_sos1_detail_btn"
+                android:layout_marginRight="8dp"
+                />
+            <ImageView
+                android:id="@+id/device_pager_next_img"
+                android:layout_width="6dp"
+                android:layout_height="10.5dp"
+                android:src="@drawable/main_arrow"/>
+        </LinearLayout>
+        -->
+
+        <!--
+        <ImageView
+            android:id="@+id/btn_circle1"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginBottom="13.5dp"
+            android:src="@drawable/main_circle1"/>
+
+        <ImageView
+            android:id="@+id/btn_circle2"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="-11.5dp"
+            android:src="@drawable/main_circle2"/>
+
+        <ImageView
+            android:id="@+id/btn_circle3"
+            android:layout_width="205dp"
+            android:layout_height="205dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-22dp"
+            android:layout_marginBottom="-36.5dp"
+            android:src="@drawable/main_circle3"/>
+
+    -->
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/main_null_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="22.5dp"
+        android:gravity="center"
+        android:text="@string/main_text1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/device_setting_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:id="@+id/sos_call_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18.5dp"
+                        android:text="SMS 연락처 관리"
+                        android:textColor="#323c3f"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/sos_call_text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop=".5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="18.5dp"
+                        android:text="위급상황 발생시 SMS를 전송할 연락처를 등록할 수 있습니다."
+                        android:textColor="#a6a6ad"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sos_call_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <Button
+                        android:layout_width="8dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="22.5dp"
+                        android:background="@drawable/arrow_right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22.5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginLeft="15dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sos_device_sound_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18.5dp"
+                        android:text="위급상황 발생시 Android 알림음"
+                        android:textColor="#323c3f"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/sos_device_sound_text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18.5dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="5.5dp"
+                        android:text="위급상황 발생시 Android 알림음을 on/off 할 수 있습니다."
+                        android:textColor="#a6a6ad"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <Switch
+                    android:id="@+id/sos_android_sound_switch"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:thumb="@drawable/setting_switch_thumb"
+                    android:track="@drawable/setting_switch_track_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="22.5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginLeft="15dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sos_device_sound_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18.5dp"
+                        android:text="위급상황 발생시 BLE Device 알림음"
+                        android:textColor="#323c3f"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/sos_device_sound_text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18.5dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="5.5dp"
+                        android:text="위급상황 발생시 BLE Device의 알림음을 on/off\n할 수 있습니다."
+                        android:textColor="#a6a6ad"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <Switch
+                    android:id="@+id/sos_device_sound_switch"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:thumb="@drawable/setting_switch_thumb"
+                    android:track="@drawable/setting_switch_track_selector" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/main_registration_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="22.5dp"
+        android:layout_marginRight="22.5dp"
+        android:layout_marginTop="14.5dp"
+        android:background="@drawable/black_border_btn"
+        android:text="BLE Device 등록"
+        android:textAllCaps="false"
+        android:textColor="@drawable/black_border_btn_text"
+        android:textSize="17dp" />
+
+</LinearLayout>
